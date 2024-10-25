@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    text-align: center;
+}
+
+.calendar-container {
+    margin: 20px auto;
+    max-width: 400px; /* Reduced max-width for smaller calendar */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Slightly reduced padding */
+}
+
+h1 {
+    color: #2980b9;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px; /* Reduced gap for a compact look */
+    margin: 10px 0; /* Reduced margin */
+}
+
+.day {
+    width: 40px; /* Smaller day blocks */
+    height: 40px; /* Adjusted height */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px; /* Slightly less rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.day:hover {
+    background-color: #e9ecef;
+    transform: scale(1.05);
+}
+
+/* Updated Dot Styles */
+.completed::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px; /* Smaller dot */
+    height: 10px; /* Smaller dot */
+    background-color: #4caf50; /* Green for completed */
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+}
+
+.missed::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px; /* Smaller dot */
+    height: 10px; /* Smaller dot */
+    background-color: #f44336; /* Red for missed */
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(244, 67, 54, 0.6);
+}
+
+.month-name {
+    grid-column: span 7;
+    font-weight: bold;
+    font-size: 1.2em; /* Smaller font size for month name */
+    margin: 10px 0;
+    color: #2980b9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.day-number {
+    font-weight: bold;
+}

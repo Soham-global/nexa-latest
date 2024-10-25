@@ -1,0 +1,102 @@
+.footer {
+    background-color: #34495e; /* Darker blue-gray */
+    color: #ecf0f1; /* Light gray */
+    padding: 20px 10px; /* Reduced padding for a smaller footer */
+    font-family: 'Arial', sans-serif; /* Clean font style */
+    text-align: center; /* Centered text */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items */
+    max-width: 800px; /* Reduced max-width for a smaller footer */
+    margin: 0 auto; /* Centering */
+}
+
+.footer-logo img {
+    width: 120px; /* Smaller logo size */
+    margin-bottom: 10px; /* Reduced space below logo */
+}
+
+.footer-links {
+    margin: 10px 0; /* Reduced margin above and below */
+}
+
+.footer-links h3 {
+    margin-bottom: 10px; /* Reduced space below heading */
+    font-size: 1.3em; /* Slightly smaller font size for heading */
+    color: #f39c12; /* Orange for headings */
+}
+
+.footer-links ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-links li {
+    margin: 5px 0; /* Reduced space between links */
+}
+
+.footer-links a {
+    color: #bdc3c7; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.footer-links a:hover {
+    color: #f39c12; /* Change color on hover */
+}
+
+.footer-socials {
+    margin: 10px 0; /* Reduced margin above and below */
+}
+
+.footer-socials h3 {
+    margin-bottom: 10px; /* Reduced space below heading */
+    font-size: 1.3em; /* Slightly smaller font size for heading */
+    color: #f39c12; /* Orange for headings */
+}
+
+.social-icons {
+    display: flex; /* Flexbox for icons */
+    justify-content: center; /* Center icons */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Reduced space between icons */
+    color: #bdc3c7; /* Icon color */
+    font-size: 20px; /* Slightly smaller icon size */
+    transition: transform 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+    color: #f39c12; /* Change color on hover */
+}
+
+.footer-bottom {
+    margin-top: 10px; /* Reduced space above */
+    font-size: 0.8em; /* Smaller font size */
+    color: #bdc3c7; /* Subtle text color */
+}
+.footer-links ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center links */
+}
+
+.footer-links li {
+    margin: 0 15px; /* Add space between links */
+}
+
+.footer-links a {
+    color: #bdc3c7; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.footer-links a:hover {
+    color: #f39c12; /* Change color on hover */
+}

@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db; /* Navbar background color */
+    padding: 10px 20px; /* Padding for the navbar */
+}
+
+.logo img {
+    height: 50px; /* Set logo height */
+    border-radius: 100px;
+}
+
+.nav-links {
+    list-style: none; /* Remove default list styles */
+    display: flex; /* Display links in a row */
+    gap: 20px; /* Space between links */
+    position: relative; /* Needed for dropdown positioning */
+}
+
+.nav-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Add padding around links */
+    border-radius: 5px; /* Round corners for links */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Background color on hover */
+}
+
+.profile a {
+    display: flex; /* Center the icon */
+    align-items: center;
+}
+
+.profile-icon {
+    width: 40px; /* Width of the profile icon */
+    height: 40px; /* Height of the profile icon */
+    border-radius: 50%; /* Make the icon round */
+    border: 2px solid black; /* Optional: border around the icon */
+}
+
+.content {
+    padding: 20px; /* Padding for the content area */
+}
+
+/* Dropdown styles */
+.nav-links li {
+    position: relative; /* Needed for absolute positioning of dropdown */
+}
+
+.dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position relative to parent */
+    top: 100%; /* Align below the parent */
+    left: 0; /* Align left */
+    background-color: #3498db; /* Dropdown background color */
+    padding: 10px; /* Padding for dropdown */
+    border-radius: 5px; /* Round corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.nav-links li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown li {
+    margin: 0; /* Reset margin for dropdown items */
+}
+
+.dropdown a {
+    display: block; /* Make dropdown items block-level for full click area */
+    padding: 5px 10px; /* Padding for dropdown items */
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.dropdown a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Background color on hover */
+}
